@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+/* navegacion */
+
+.nav-1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    width: auto;
+    height: 150px; 
+}
+  
+.nav-1 ul {
+    display: flex;
+    flex-direction: row; 
+}
+  
+.nav-1 ul li {
+    list-style: none;
+    padding: 45px; 
+}
+  
+.nav-1 ul li p {
+    color: whitesmoke;
+    text-decoration: none; 
+}
+  
+.nav-1 input {
+    margin: 50px; 
+}
+
+.nav-2 {
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around; 
+}
+  
+.nav-2 ul {
+    display: flex;
+    justify-content: center; 
+}
+  
+.nav-2 ul li {
+    list-style: none;
+    padding: 20px; 
+}
+  
+.nav-2 ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 17px; 
+}
+
+.nav-3 {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around; 
+}
+  
+.nav-3 ul {
+    display: flex;
+    justify-content: center; 
+}
+  
+.nav-3 ul li {
+    list-style: none;
+    padding: 20px; 
+}
+  
+.nav-3 ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 17px; 
+}
+
+.buscador {
+    width: 150%;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-items: center;
+    border: 1px solid white;
+    border-radius: 9px;
+}
+
+.logo {
+    width: 40px;
+}
+
+/* inicio, pagina principal */
+
+.portada {
+    width: 100%;
+    height: 600px; 
+}
+  
+.padding-info {
+    background-color: black;
+    padding-top: 36px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 20px;
+    color: whitesmoke;
+    background-color: grey;
+    font-size: 20px; 
+}
+  
+.toca_aca {
+    list-style: none;
+    text-decoration: none;
+    color: whitesmoke; 
+}
+
+.destacados {
+    color: whitesmoke;
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.col1 {
+    background-color: black;
+    display: grid;
+    padding-bottom: 60px;
+    grid-template-rows: auto;
+    grid-column-end: 4;
+}
+
+.row1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* todas las cartas */
+
+.card2 {
+    padding: 15px;
+    border-radius: 20px;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card2:hover {
+    box-shadow: 5px 5px 20px whitesmoke;
+    border-radius: 20px;
+    transform: translateY(-3%);
+}
+
+.card2-1 {
+    background-color: black;
+    padding-top: 60px;
+}
+
+.bg-card {
+    background-color: whitesmoke;
+    border-radius: 6px;
+}
+
+.card-title {
+    color: gray;
+}
+
+.card-text {
+    color: gray;
+}
+
+.boton {
+    color: whitesmoke;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* productos */
+
+.col2 {
+    background-color: black;
+    display: grid;
+    padding-bottom: 60px;
+    grid-template-rows: auto;
+    grid-column-end: 9;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.col3 {
+    background-color: black;
+    display: grid;
+    padding-bottom: 60px;
+    grid-template-rows: auto;
+    grid-column-end: 9;
+}
+
+.row3 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.col4 {
+    background-color: black;
+    display: grid;
+    padding-bottom: 60px;
+    grid-template-rows: auto;
+    grid-column-end: 9;
+}
+
+.row4 {
+    display: flex;
+    justify-content: center;
+}
+
+.col5 {
+    background-color: black;
+    display: grid;
+    padding-bottom: 60px;
+    grid-template-rows: auto;
+    grid-column-end: 9;
+}
+
+.row5 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* preguntas frecuentes y pilitica de devolucion*/
+
+.titulo-pf {
+    color: whitesmoke;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+  
+.preguntas-frecuentes {
+    color: whitesmoke;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 17px
+}
+  
+.preguntas-frecuentes ul li {
+    padding: 15px;
+    text-decoration: none;
+    list-style: none; 
+}
+
+/* contactos */
+
+.form-1 {
+    background-color: black;
+    padding-top: 70px;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px; 
+}
+  
+.formulario h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: whitesmoke; 
+}
+  
+.formulario p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: whitesmoke; 
+}
+  
+.formulario a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: whitesmoke;
+    font-weight: 700; 
+}
+  
+.formulario form .form-name {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    outline: 0px; 
+}
+  
+.formulario-text {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    outline: 0px; 
+}
+  
+.formulario form .btn-enviar {
+    padding: 15px;
+    margin-bottom: 90px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease; 
+}
+
+/* footer */
+
+.footer1 {
+    color: whitesmoke;
+    background-color: grey;
+    display: flex;
+    justify-content: center; 
+}
+  
+.footer-inicio {
+    width: 70%;
+    max-width: 1200px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row; 
+}
+  
+footer div {
+    display: flex;
+    flex-direction: row; 
+}
+  
+footer ul li {
+    list-style: none;
+    margin: 10px; 
+}
+  
+footer ul li a {
+    color: whitesmoke;
+    text-decoration: none; 
+}
+
+.contacto {
+    padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
