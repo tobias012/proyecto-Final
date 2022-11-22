@@ -8,6 +8,7 @@ body {
     background-color: black;
 }
 
+
 /* navegacion */
 
 .nav-1 {
@@ -19,32 +20,14 @@ body {
     width: auto;
     height: 150px; 
 }
-  
-.nav-1 ul {
-    display: flex;
-    flex-direction: row; 
-}
-  
-.nav-1 ul li {
-    list-style: none;
-    padding: 45px; 
-}
-  
-.nav-1 ul li p {
-    color: whitesmoke;
-    text-decoration: none; 
-}
-  
-.nav-1 input {
-    margin: 50px; 
-}
 
 .nav-2 {
+    width: 50%;
     background-color: black;
     padding: 15px;
     display: flex;
     justify-content: center;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
   
 .nav-2 ul {
@@ -60,44 +43,36 @@ body {
 .nav-2 ul li a {
     color: whitesmoke;
     text-decoration: none;
-    font-size: 17px; 
-}
-
-.nav-3 {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    justify-content: space-around; 
-}
-  
-.nav-3 ul {
-    display: flex;
-    justify-content: center; 
-}
-  
-.nav-3 ul li {
-    list-style: none;
-    padding: 20px; 
-}
-  
-.nav-3 ul li a {
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 17px; 
-}
-
-.buscador {
-    width: 150%;
-    margin-top: 10px;
-    padding: 10px;
-    display: flex;
-    justify-items: center;
-    border: 1px solid white;
-    border-radius: 9px;
+    font-size: 17px;
+    transition: 0,4s;
 }
 
 .logo {
     width: 40px;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    color: whitesmoke;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0,4s;
+
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+.nav-2 ul li a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: blue;
+}
+
+#check {
+    display: none;
 }
 
 /* inicio, pagina principal */
@@ -383,11 +358,145 @@ footer ul li a {
 }
 
 
+/* responsive de la pagina */
 
+@media (max-width: 576px) {
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
 
+    .nav-2 {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0,8s;
+    }
 
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
 
+    .mostrar-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
 
+    #check:checked ~ .nav-2{
+        right: 0;
+    }
+
+    .row1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 20vh;
+    }
+
+    .res-carrusel {
+        background-color: black;
+        padding-top: 75px;
+    }
+
+    .res-procuctos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+    .nav-2 {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0,8s;
+    }
+
+    .res-nav {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    .mostrar-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .nav-2{
+        right: 0;
+    }
+
+    .row1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        height: 20vh;
+    }
+
+    .res-carrusel {
+        background-color: black;
+        padding-top: 75px;
+    }
+
+    .res-procuctos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .res-text-form{
+        padding-left: 10px;
+    }
+
+    .res-form {
+        padding-right: 10px;
+    }
+}
 
 
 

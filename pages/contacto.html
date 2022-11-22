@@ -13,47 +13,46 @@
 </head>
 <body>
     <header>
-        <section class="nav-1">
-            <a href="../index.html" class="logo"><img src="../imagenes/logo.png" alt="logo"></a>
-            <nav>
-                <input type="search" placeholder="¿Que estas buscando?" class="buscador">
-            </nav>
-            <div class="nav-3">
-                <ul>
-                    <li><a href="#"><p>Mi cuenta</p></a></li>
-                    <li><a href="./contacto.html"><p>Ayuda</p></a></li>
-                    <li><a href="#"><p>Mi carrito</p></a></li>
-                </ul>
+        <nav class="nav-1">
+            <div>
+                <a href="../index.html" class="logo"><img src="../imagenes/logo.png" alt="logo"></a>
             </div>
-        </section>
-        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="mostrar-menu">
+                &#8801
+            </label>
             <div class="nav-2">
-                <ul>
+                <ul class="res-nav">
                     <li><a href="../index.html">Incio</a></li>
                     <li><a href="./productos.html">Productos</a></li>
                     <li><a href="./preguntas.html">Pregustas Frecuentes</a></li>
                     <li><a href="./devolucion.html">Politica de devolucion</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
+                <label for="check" class="esconder-menu">
+                    &#215
+                </label>
             </div>
         </nav>
     </header>
     <main>
         <div class="form-1">
             <div class="formulario">
-                <div>
+                <div class="res-text-form">
                     <h2>Contactanos</h2>
                     <p>Comunicate vía WhatsApp o vía Instagram a @zizou.indumentaria</p>
                     <p>telefono: +54911111111</p> 
                     <a href="#">Gmail: tobi.silvestri@gmail.com</a>
                 </div>
-                <form action="#" autocomplete="off">
-                    <input type="text" name="name" placeholder="ingresa tu nombre" class="form-name">
-                    <input type="email" name="email" placeholder="ingresa tu email" class="form-name">
-                    <input type="number" name="email" placeholder="ingresa tu numero de telefono" class="form-name">
-                    <textarea name="mensaje" placeholder="ingresa tu mensaje" class="formulario-text"></textarea>
-                    <input type="submit" name="enviar" value="enviar mensaje" class="btn-enviar">
-                </form>
+                <div class="res-form">
+                    <form action="#" autocomplete="off">
+                        <input type="text" name="name" placeholder="ingresa tu nombre" class="form-name">
+                        <input type="email" name="email" placeholder="ingresa tu email" class="form-name">
+                        <input type="number" name="email" placeholder="ingresa tu numero de telefono" class="form-name">
+                        <textarea name="mensaje" placeholder="ingresa tu mensaje" class="formulario-text"></textarea>
+                        <input type="submit" name="enviar" value="enviar mensaje" class="btn-enviar">
+                    </form>
+                </div>
             </div>
         </div>
     </main>
